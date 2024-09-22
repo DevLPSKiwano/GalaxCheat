@@ -1,0 +1,413 @@
+local screenGui = Instance.new("ScreenGui")
+local scrollingFrame = Instance.new("ScrollingFrame")
+local contentFrame = Instance.new("Frame")
+local TitreLabel = Instance.new("TextLabel")
+local AcsAmmoButton = Instance.new("TextButton")
+local InfinityYieldButton = Instance.new("TextButton")
+local TpTool = Instance.new("TextButton")
+local InvFling = Instance.new("TextButton")
+local SpamButton = Instance.new("TextButton")
+local AcsSound = Instance.new("TextButton")
+local DestroyPartTool = Instance.new("TextButton")
+local ColorPartTool = Instance.new("TextButton")
+local ExploseMapButton = Instance.new("TextButton")
+local OwlAimbot = Instance.new("TextButton")
+local AcsStamina = Instance.new("TextButton")
+local GiveToolButton = Instance.new("TextButton")
+local WalkspeedButton = Instance.new("TextButton")
+local JumpPowerButton = Instance.new("TextButton")
+
+screenGui.Name = "nhffh"
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+scrollingFrame.Name = "ffsd"
+scrollingFrame.Size = UDim2.new(0.5, 0, 0.5, 0)
+scrollingFrame.Position = UDim2.new(0.25, 0, 0.25, 0)
+scrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+scrollingFrame.ScrollBarThickness = 10
+scrollingFrame.BorderSizePixel = 0
+scrollingFrame.BackgroundTransparency = 0.2
+scrollingFrame.ClipsDescendants = true
+scrollingFrame.Parent = screenGui
+
+local roundedFrame = Instance.new("Frame")
+roundedFrame.Size = UDim2.new(1, 0, 1, 0)
+roundedFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+roundedFrame.Parent = scrollingFrame
+
+local uiCorner = Instance.new("UICorner")
+uiCorner.CornerRadius = UDim.new(0, 10)
+uiCorner.Parent = roundedFrame
+
+contentFrame.Name = "ContentFrame"
+contentFrame.Size = UDim2.new(1, 0, 0, 1000)
+contentFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+contentFrame.Position = UDim2.new(0, 0, 0, 0)
+contentFrame.Parent = roundedFrame
+
+local padding = Instance.new("UIPadding")
+padding.PaddingTop = UDim.new(0, 10)
+padding.PaddingBottom = UDim.new(0, 10)
+padding.PaddingLeft = UDim.new(0, 10)
+padding.PaddingRight = UDim.new(0, 10)
+padding.Parent = contentFrame
+
+
+
+AcsAmmoButton.Name = "AcsAmmoButton"
+AcsAmmoButton.Size = UDim2.new(1, 0, 0, 50)
+AcsAmmoButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AcsAmmoButton.Text = "ACS Ammo"
+AcsAmmoButton.TextColor3 = Color3.fromRGB(21, 25, 255)
+AcsAmmoButton.TextSize = 24
+AcsAmmoButton.Font = Enum.Font.GothamBold
+AcsAmmoButton.Parent = contentFrame
+AcsAmmoButton.BackgroundTransparency = 1
+
+InfinityYieldButton.Name = "InfinityYieldButton"
+InfinityYieldButton.Size = UDim2.new(1, 0, 0, 50)
+InfinityYieldButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfinityYieldButton.Text = "Infinity Yield"
+InfinityYieldButton.TextColor3 = Color3.fromRGB(21, 25, 255)
+InfinityYieldButton.TextSize = 24
+InfinityYieldButton.Font = Enum.Font.GothamBold
+InfinityYieldButton.Parent = contentFrame
+InfinityYieldButton.BackgroundTransparency = 1
+
+TpTool.Name = "TpToolButton"
+TpTool.Size = UDim2.new(1, 0, 0, 50)
+TpTool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TpTool.Text = "TP Tool"
+TpTool.TextColor3 = Color3.fromRGB(21, 25, 255)
+TpTool.TextSize = 24
+TpTool.Font = Enum.Font.GothamBold
+TpTool.Parent = contentFrame
+TpTool.BackgroundTransparency = 1
+
+InvFling.Name = "InvFlingButton"
+InvFling.Size = UDim2.new(1, 0, 0, 50)
+InvFling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InvFling.Text = "Inv Fling"
+InvFling.TextColor3 = Color3.fromRGB(21, 25, 255)
+InvFling.TextSize = 24
+InvFling.Font = Enum.Font.GothamBold
+InvFling.Parent = contentFrame
+InvFling.BackgroundTransparency = 1
+
+SpamButton.Name = "SpamButton"
+SpamButton.Size = UDim2.new(1, 0, 0, 50)
+SpamButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpamButton.Text = "Pub Lyks/Spam"
+SpamButton.TextColor3 = Color3.fromRGB(21, 25, 255)
+SpamButton.TextSize = 24
+SpamButton.Font = Enum.Font.GothamBold
+SpamButton.Parent = contentFrame
+SpamButton.BackgroundTransparency = 1
+
+AcsSound.Name = "AcsSoundCheat"
+AcsSound.Size = UDim2.new(1, 0, 0, 50)
+AcsSound.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AcsSound.Text = "Music"
+AcsSound.TextColor3 = Color3.fromRGB(21, 25, 255)
+AcsSound.TextSize = 24
+AcsSound.Font = Enum.Font.GothamBold
+AcsSound.Parent = contentFrame
+AcsSound.BackgroundTransparency = 1
+
+DestroyPartTool.Name = "DestroyPartButton"
+DestroyPartTool.Size = UDim2.new(1, 0, 0, 50)
+DestroyPartTool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DestroyPartTool.Text = "DestroyPartTool"
+DestroyPartTool.TextColor3 = Color3.fromRGB(21, 25, 255)
+DestroyPartTool.TextSize = 24
+DestroyPartTool.Font = Enum.Font.GothamBold
+DestroyPartTool.Parent = contentFrame
+DestroyPartTool.BackgroundTransparency = 1
+
+ColorPartTool.Name = "ColorPartButton"
+ColorPartTool.Size = UDim2.new(1, 0, 0, 50)
+ColorPartTool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ColorPartTool.Text = "ColorPartTool"
+ColorPartTool.TextColor3 = Color3.fromRGB(21, 25, 255)
+ColorPartTool.TextSize = 24
+ColorPartTool.Font = Enum.Font.GothamBold
+ColorPartTool.Parent = contentFrame
+ColorPartTool.BackgroundTransparency = 1
+
+ExploseMapButton.Name = "ExploseMabButton"
+ExploseMapButton.Size = UDim2.new(1, 0, 0, 50)
+ExploseMapButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExploseMapButton.Text = "ExploseMap (Client) "
+ExploseMapButton.TextColor3 = Color3.fromRGB(21, 25, 255)
+ExploseMapButton.TextSize = 24
+ExploseMapButton.Font = Enum.Font.GothamBold
+ExploseMapButton.Parent = contentFrame
+ExploseMapButton.BackgroundTransparency = 1
+
+
+
+OwlAimbot.Name = "OwlAimbotButton"
+OwlAimbot.Size = UDim2.new(1, 0, 0, 50)
+OwlAimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OwlAimbot.Text = "Owl Aimbot "
+OwlAimbot.TextColor3 = Color3.fromRGB(21, 25, 255)
+OwlAimbot.TextSize = 24
+OwlAimbot.Font = Enum.Font.GothamBold
+OwlAimbot.Parent = contentFrame
+OwlAimbot.BackgroundTransparency = 1
+
+AcsStamina.Name = "AcsStaminaButton"
+AcsStamina.Size = UDim2.new(1, 0, 0, 50)
+AcsStamina.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AcsStamina.Text = "ACS Stamina "
+AcsStamina.TextColor3 = Color3.fromRGB(21, 25, 255)
+AcsStamina.TextSize = 24
+AcsStamina.Font = Enum.Font.GothamBold
+AcsStamina.Parent = contentFrame
+AcsStamina.BackgroundTransparency = 1
+
+GiveToolButton.Name = "AcsStaminaButton"
+GiveToolButton.Size = UDim2.new(1, 0, 0, 50)
+GiveToolButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GiveToolButton.Text = "Give Tool "
+GiveToolButton.TextColor3 = Color3.fromRGB(21, 25, 255)
+GiveToolButton.TextSize = 24
+GiveToolButton.Font = Enum.Font.GothamBold
+GiveToolButton.Parent = contentFrame
+GiveToolButton.BackgroundTransparency = 1
+
+WalkspeedButton.Name = "WalkspeedButton"
+WalkspeedButton.Size = UDim2.new(1, 0, 0, 50)
+WalkspeedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkspeedButton.Text = "Walkspeed "
+WalkspeedButton.TextColor3 = Color3.fromRGB(21, 25, 255)
+WalkspeedButton.TextSize = 24
+WalkspeedButton.Font = Enum.Font.GothamBold
+WalkspeedButton.Parent = contentFrame
+WalkspeedButton.BackgroundTransparency = 1
+
+JumpPowerButton.Name = "JumpPowerButton"
+JumpPowerButton.Size = UDim2.new(1, 0, 0, 50)
+JumpPowerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerButton.Text = "Jump Power "
+JumpPowerButton.TextColor3 = Color3.fromRGB(21, 25, 255)
+JumpPowerButton.TextSize = 24
+JumpPowerButton.Font = Enum.Font.GothamBold
+JumpPowerButton.Parent = contentFrame
+JumpPowerButton.BackgroundTransparency = 1
+
+
+scrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(21, 25, 255)
+scrollingFrame.ScrollBarImageTransparency = 0.5
+
+local listLayout = Instance.new("UIListLayout")
+listLayout.Parent = contentFrame
+
+
+AcsAmmoButton.MouseButton1Click:Connect(function()
+	scrollingFrame.Visible = false
+	local screenGui = Instance.new("ScreenGui")
+	screenGui.Name = "Proute"
+	screenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+	local textBox = Instance.new("TextBox")
+	textBox.Name = "Neuille"
+	textBox.Size = UDim2.new(0, 250, 0, 50)
+	textBox.Position = UDim2.new(0.5, -125, 0.4, -25)
+	textBox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	textBox.BorderColor3 = Color3.fromRGB(100, 100, 100)
+	textBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+	textBox.Font = Enum.Font.GothamBold
+	textBox.TextSize = 20
+	textBox.PlaceholderText = "Nom Arme:"
+	textBox.TextWrapped = true
+	textBox.ClearTextOnFocus = true
+	textBox.Parent = screenGui
+
+	local button = Instance.new("TextButton")
+	button.Name = "Siuuuuu"
+	button.Size = UDim2.new(0, 120, 0, 50)
+	button.Position = UDim2.new(0.5, -60, 0.55, -25)
+	button.BackgroundColor3 = Color3.fromRGB(50, 150, 50)
+	button.BorderColor3 = Color3.fromRGB(0, 100, 0)
+	button.TextColor3 = Color3.fromRGB(255, 255, 255)
+	button.Font = Enum.Font.GothamBold
+	button.TextSize = 22
+	button.Text = "Executer"
+	button.Parent = screenGui
+
+	local function applyValues()
+		local toolName = textBox.Text
+		local player = game.Players.LocalPlayer
+		local backpack = player.Backpack
+
+		local tool = backpack:FindFirstChild(toolName)
+		if tool then
+			local ammo = tool:FindFirstChild("ACS_Modulo") and tool.ACS_Modulo:FindFirstChild("Variaveis") and tool.ACS_Modulo.Variaveis:FindFirstChild("Ammo")
+			local storedAmmo = tool:FindFirstChild("ACS_Modulo") and tool.ACS_Modulo:FindFirstChild("Variaveis") and tool.ACS_Modulo.Variaveis:FindFirstChild("StoredAmmo")
+
+			if ammo and storedAmmo then
+				storedAmmo.Value = 99999
+				storedAmmo.MaxValue = 99999
+				ammo.Value = 99999
+				screenGui.Enabled = false
+			else
+				print("CACA")
+			end
+		else
+			print("CACA")
+		end
+	end
+
+	button.MouseButton1Click:Connect(applyValues)
+
+end)
+
+InfinityYieldButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	scrollingFrame.Visible = false
+end)
+
+TpTool.MouseButton1Click:Connect(function()
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "TP Tool"
+	tool.Activated:connect(function()
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+	scrollingFrame.Visible = false
+	
+end)
+
+InvFling.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/WvUnM1LY"))()
+end)
+
+SpamButton.MouseButton1Click:Connect(function()
+	while true do
+		task.wait(3)
+		print("Galax Owned By Lyks")
+		print("Gacha la lyks t'encule ")
+	end
+end)
+
+AcsSound.MouseButton1Click:Connect(function()
+	scrollingFrame.Visible = false
+	local screenGui = Instance.new("ScreenGui")
+	screenGui.Name = "dfsdas"
+	screenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+
+
+	local button = Instance.new("TextButton")
+	button.Name = "dsadas"
+	button.Size = UDim2.new(0, 120, 0, 50)
+	button.Position = UDim2.new(0.5, -60, 0.55, -25)
+	button.BackgroundColor3 = Color3.fromRGB(50, 150, 50)
+	button.BorderColor3 = Color3.fromRGB(0, 100, 0)
+	button.TextColor3 = Color3.fromRGB(255, 255, 255)
+	button.Font = Enum.Font.GothamBold
+	button.TextSize = 22
+	button.Text = "Jouer"
+	button.Parent = screenGui
+
+	local Sound =  game.ReplicatedStorage.ACS_Engine.FX.EarRing
+
+	button.MouseButton1Click:Connect(function()
+		screenGui.Enabled = false
+		Sound.Playing = true
+		Sound.Volume = 100
+		Sound.MaxDistance = 2000
+	end)
+end)
+
+DestroyPartTool.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "DestroyPart"
+	mouse.Button1Down:Connect(function()
+		local target = mouse.Target
+		if target and target:IsA("Part") then
+			target:Destroy()
+		end
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+	scrollingFrame.Visible = false
+end)
+
+ColorPartTool.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "ColorPart"
+	mouse.Button1Down:Connect(function()
+		local target = mouse.Target
+		if target and target:IsA("Part") then
+			target.BrickColor = BrickColor.random()
+  		end
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+	scrollingFrame.Visible = false
+end)
+
+ExploseMapButton.MouseButton1Click:Connect(function()
+	ExploseMapButton.MouseButton1Click:Connect(function()
+		for _, part in pairs(workspace:GetDescendants()) do
+			if part:IsA("Part") then
+				local explosion = Instance.new("Explosion")
+				explosion.Position = part.Position
+				explosion.Parent = workspace
+				explosion.BlastRadius = 10
+				explosion.BlastPressure = 5000 
+				explosion.ExplosionType = Enum.ExplosionType.Craters 
+			end
+		end
+	end)
+
+end)
+
+
+
+OwlAimbot.MouseButton1Click:Connect(function()
+	scrollingFrame.Visible = false
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+
+AcsStamina.MouseButton1Click:Connect(function()
+	scrollingFrame.Visible = false
+	local StarterCharacterScript = game.StarterPlayer.StarterCharacterScripts
+
+	local Stamina = StarterCharacterScript.ACS_Client.Variaveis.Stamina
+	Stamina.MaxValue = 8999999
+	Stamina.MaxValue = 9000000
+	Stamina.Value = 9000000
+end)
+
+GiveToolButton.MouseButton1Click:Connect(function()
+	scrollingFrame.Visible = false
+	for i,v in ipairs(game.ReplicatedStorage:GetDescendants()) do
+		if v:IsA("Tool") then
+			v:Clone().Parent = game.Players.LocalPlayer.Backpack
+		end
+		
+	end
+end)
+
+WalkspeedButton.MouseButton1Click:Connect(function()
+	scrollingFrame.Visible = false
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+
+end)
+
+JumpPowerButton.MouseButton1Click:Connect(function()
+	scrollingFrame.Visible = false
+	game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 70
+end)
